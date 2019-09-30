@@ -39,6 +39,7 @@ class Window(arcade.Window):
             self.animal_sprite.center_y = y
             self.animal_sprite.dx = dx
             self.animal_sprite.dy = dy
+            self.animal_sprite.mass = 1
             self.animal_list.append(self.animal_sprite)            
 
     def update(self, delta_time):
@@ -56,7 +57,7 @@ class Window(arcade.Window):
                 a.dy = c.dy 
                 c.dx = tx
                 c.dy = ty
-
+                pass
 
             if a.center_x <= MARGIN:
                 a.center_x = MARGIN
