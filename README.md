@@ -1,11 +1,3 @@
 # E05b-Physics
-Exploring 2D physics and collisions.
-
-In *main1.py*, you will need to apply gravity to the balls on the screen. To do so, you will need to find an appropriate gravity constant and assign GRAVITY to that number (line 17). Because of the way the Y axis works in Python Arcade, GRAVITY will need to be a negative number for the balls to fall.
-
-You will then need to accelerate the balls according to the GRAVITY constant. You can call b.accelerate(x,y) on line 67. In the case of applying gravity, x will be 0 and y will be GRAVITY.
-
-*main2.py*, is a little more complicated. You will need to apply all the lessons you learned in main1.py, but now we want the balls to bounce off the walls. First apply the GRAVITY constant from main1.py and accelerate the balls. Then, lines 39, 45, 51, and 57 will ask you to bounce (reverse the velocity) of the ball when it hits a wall. Think about what we discussed in class. I am applying some friction so they don't bounce forever.
-
-*main3.py* implements the worst, most-naive version of collision physics using the built-in sprite collision detection. Assuming all the animal heads have the same mass, adjust lines 53–60 to make the collisions more realistic.
-
+This assignmemnt is all about collusions. In the first file you have to find a constant for gravity when has to be negative. The constant that I used for grativy is -9.81 which is the actual constant for grativy. For the next file you have to make the balls bounce. 
+To make the balls bouce of the wall I made dx = dx and times in by -1 on lines 39 and 45. I did the same thing for dy on lines 51 and 57. For the third file you have to make the animals bounce off of each other. To do this you must make a temporary x equal a.dx, a temporary y equal a.dy, a.dx equals c.dx, a.dy equals c.dy, c.dx equals tx, and c.dy equals ty. All of the t's in this file means temporary, the c's stand for collusion, and the dx and dy are thw inital velocity. 
